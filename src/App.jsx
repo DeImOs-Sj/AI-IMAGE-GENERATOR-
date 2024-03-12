@@ -3,6 +3,7 @@ import * as tf from '@tensorflow/tfjs';
 import * as mobilenet from '@tensorflow-models/mobilenet';
 import Navbar from './Components/Navbar'
 import SideBar from './Components/SideBar';
+import Webcam from './Components/Webcam'
 
 function App() {
   const [prediction, setPrediction] = useState('');
@@ -37,8 +38,10 @@ console.log(result)
   return (
     <div className="min-h-screen bg-gray-100">
       <Navbar />
-  <div className='flex'>
-      <SideBar/>
+  <div className='flex bg-[#e2d7a7]'>
+        <SideBar />
+              <Webcam/>
+
           <div className="container mx-auto py-8">
         <h1 className="text-3xl font-bold mb-4">AI Image Classification with TensorFlow</h1>
         <input type="file" onChange={handleImageUpload} className="border border-gray-300 rounded-md px-4 py-2 mb-4" />
