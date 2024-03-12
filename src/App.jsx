@@ -43,7 +43,7 @@ console.log(result)
               <Webcam/>
 
           <div className="container mx-auto py-8">
-        <h1 className="text-3xl font-bold mb-4">AI Image Classification with TensorFlow</h1>
+        <h1 className="text-3xl font-bold mb-4">AI Image Classification and Detection with TensorFlow</h1>
         <input type="file" onChange={handleImageUpload} className="border border-gray-300 rounded-md px-4 py-2 mb-4" />
         {prediction && <p className="bg-gray-900 text-white rounded-md px-4 py-2 mb-4">Prediction: {prediction}</p>}
         <img ref={imageRef} alt="Upload" className="w-[36rem] h-auto rounded-md shadow-md" />
